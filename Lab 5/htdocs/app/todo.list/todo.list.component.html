@@ -1,0 +1,9 @@
+<div class="container well">
+  <h1>Things to do</h1>
+   <table class="table">
+   	<tr *ngFor="let item of myList">
+   	<th>{{item.text}}</th>
+   	<th><div *ngIf="item.done"><span class="glyphicon glyphicon-ok-circle"></span></div></th>
+   	</tr>
+   </table>
+</div>	
